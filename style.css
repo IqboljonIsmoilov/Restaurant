@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0C1023;
+}
+
+/* ***************   header   *******************/
+
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.651),rgba(0, 0, 0, 0.678)), url(img/home-bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+}
+
+.header_row {
+    display: flex;
+}
+
+.header_col {
+    width: 50%;
+    display: inline-block;
+    height: 5%;
+    margin-top: 20px;
+}
+
+.menu nav ul li{
+    display: inline-block;
+    margin-left: 3%;
+    transition: 0.5s;
+}
+
+.menu{
+    position:fixed;
+    top: 0;
+    left: 55%;
+}
+
+.menu ul li:hover{
+    transform: scale(1.2);
+}
+
+.menu ul li:active {
+    transform: scale(0.9);
+}
+
+.logo {
+    margin-left: 5%;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.menu nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 255, 85);
+    z-index: 11; 
+}
+
+.menu nav ul li a:hover {
+    color: #f00;
+}
+
+.menu nav ul li a:active {
+    color: rgb(255, 238, 0);
+    
+}
+
+.menu nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background-color: #f00;
+}
+
+.menu nav ul li a:hover::after{
+    width: 100%;
+}
+
+/************** section 1 *****************/
+
+.section1 {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
+
+.dine_out_restaurant h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -60px;
+}
+
+.dine_out_restaurant p {
+    color: #fff;
+    line-height: 40px;
+}
+
+.dine_out_restaurant button {
+    margin-top: 30px;
+    padding: 13px 35px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 158, 32);
+    color: rgb(255, 158, 32);
+    font-size: 17px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.dine_out_restaurant button:hover {
+    background-color: rgb(0, 255, 64);
+    border: 2px solid rgb(0, 255, 64);
+    transform: scale(1.2);
+    color: #f00;
+}
+
+.dine_out_restaurant button:active{
+    transform: scale(0.9);
+}
+
+/************** section 2 *****************/
+
+.section2 {
+    width: 85%;
+    margin: auto;
+}
+
+.section2 h3 {
+    font-family: Monotype Corsiva;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.section2 h1 {
+    padding-bottom: 70px;
+    font-size: 30px;
+}
+
+.section2 h3, .section2 h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.about_Us_row {
+    display: flex;
+}
+
+.about_col {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.about_Us_row h4 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about_Us_row p {
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 0 50px 20px 0;
+}
+
+.about_col img{
+    border-radius: 20px;
+    height: 400px;
+    transition: 0.7s;
+    box-shadow: 2px 2px 20px rgb(35, 0, 163);
+}
+
+.about_col img:hover{
+    transform: scale(0.9);
+}
+
+.about_col img:active{
+    transform: scale(1.1);
+}
+
+.about_col button {
+    font-size: 17px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: rgb(255, 158, 32);
+    border: 2px solid rgb(255, 158, 32);
+    background:transparent;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.about_col button:hover{
+    background-color: rgb(0, 255, 64);
+    border: 2px solid rgb(0, 255, 64);
+    transform: scale(1.1);
+    color: #f00;
+}
+
+.about_col button:active{
+    transform: scale(0.9);
+}
+
+/************** section 3 *****************/
+
+.section3 {
+    width: 100%;
+    margin: auto;
+}
+
+.section3 h3, .section3 h1, .section3 nav{
+    text-align: center;
+    color: #fff;
+}
+
+.section3 h3{
+    font-family:  Monotype Corsiva;
+    font-size: 20px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.section3 h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.section3 nav {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.section3 nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    display: block;
+    margin: auto;
+    background-color: rgb(0, 255, 64);
+    transition: 0.5s;
+}
+
+.section3 nav ul li a:hover::after{
+    width: 100%;
+}
+
+.section3 nav ul li a:active{
+    color: #ff0;
+}
+
+.section3 nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.section3 nav ul li:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.section3 nav ul li:active{
+    transform: scale(0.9);
+}
+
+.section3 nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 255, 64);
+}
+
+.menu_row {
+    display: flex;
+}
+
+.menu_col {
+    width: 100%;
+    color: beige;
+    padding:0 130px 80px;
+}
+
+.menu_col img {
+    height: 150px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.menu_col img:hover{
+    transform: scale(1.3);
+}
+
+.menu_col p {
+    margin-bottom: 5px;
+}
+
+.menu_col a {
+    text-decoration: none;
+    color: #f00; 
+    margin-left: 50px;   
+}
+
+/************** section 4 *****************/
+
+.section4 {
+    width: 85%;
+    margin: auto;
+}
+
+.section4 h3, .section4 h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.section4 h3 {
+    font-family: Monotype Corsiva;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.section4 h1 {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 30px;
+}
+
+.feedback_row {
+    display: flex;
+}
+
+.feedback_col {
+    display: inline-block;
+    border: 2px solid #1f1936;
+    padding: 25px;
+    margin-left: 55px;
+    transform: translate(-55px);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 10px 0 rgb(0, 88, 129);
+    cursor: pointer;
+}
+
+.feedback_col:hover{
+    box-shadow: 3px 3px 20px 5px rgb(0, 0, 0);
+}
+
+.feedback_col img {
+    margin-left: 240px;
+    margin-top: -50px;
+    background-color: #ff0;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.feedback_col h4, .feedback_col p {
+    color: #fff;
+} 
+
+.feedback_col p {
+    margin-top: 0px;
+    line-height: 25px;
+}
+
+/************** section 5 *****************/
+
+.section5 {
+    width: 85%;
+    margin: auto;
+}
+
+.section5 h3, .section5 h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.section5 h3 {
+    font-family: Monotype Corsiva;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.section5 h1 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.Our_chef_row {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.Our_chef_col {
+    display: inline-block;
+    margin: auto;
+    padding: 65px;
+}
+
+.Our_chef_col h5, .Our_chef_col p {
+    color: #fff;
+}
+
+.Our_chef_col img{
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 2px 2px 10px  rgb(56, 96, 182);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.Our_chef_col img:hover{
+    transform: scale(1.1);
+}
+
+.Our_chef_col > img{
+    margin-left: -66px;
+}
+
+.Our_chef_col h5, .Our_chef_col p{
+    background-color: #191F3A;
+    text-align: center;
+    margin: auto;
+    transform: translate(-35px);
+    padding: 5px 20px;
+    font-size: 20px;
+    margin-top: -36px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #000744;
+}
+
+.Our_chef_col h5 {
+    width: 200px;
+    margin-bottom: 36px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Our_chef_col p {
+    width: 200px;
+    margin-bottom: 36px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*****************       footer        *****************/
+
+footer {
+    background-image:linear-gradient(to right, #222222dc, #000000b4), url(img/footer-bg.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer_row {    
+    display: flex;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.footer_col {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    flex-basis: 28%;
+    margin: auto;
+    height: 220px;
+}
+
+.footer_col h1 {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.footer_col p {
+    margin-bottom: 10px;
+    transition: 0.3s;
+    
+}
+
+.footer_col  .link {
+    margin-top: 30px;
+}
+
+.footer_col p a{
+    text-decoration: none;
+    color: rgb(0, 204, 255);
+}
+
+.footer_col p a:hover {
+    color: #f00;
+}
+
+.footer_col p:hover{
+    transform: scale(1.1);
+}
+
+.footer_col p:active{
+    transform: scale(0.9);
+}
+
+.link a {
+    margin-left: 20px;
+}
+
+.link a img {
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.link a img:hover {
+    transform: scale(1.4);
+}
+
+.link a img:active {
+    transform: scale(0.8);
+}
+
+hr {
+    width: 85%;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.author {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/**************    Media    ******************/
+
+@media(max-width: 767px) {
+
+    .header{
+        background-image: none;
+    }
+
+    .header_col nav{
+        margin: 90px;
+        margin-top: 0;
+        margin-left: 52%;
+    }
+
+    .header_col nav ul li{
+        padding-top: 5px;
+    }
+
+    /* section 1 */
+
+    .dine_out_restaurant h1{
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    
+    /* section 2 */
+
+    .about_Us_row {
+        flex-direction: column;
+    }
+
+    .about_Us_row img {
+        width: 100%;
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    /* section 3 */
+
+    .menu_row {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    /* section 4 */
+
+    .feedback_row {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .feedback_col {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* section 5 */
+
+    .Our_chef_row {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .Our_chef_col {
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+}
